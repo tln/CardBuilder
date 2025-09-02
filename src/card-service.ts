@@ -11,6 +11,7 @@ import { DecoratedTextBuilder } from './widgets/decorated-text/decorated-text.bu
 import { DividerBuilder } from './widgets/divider/divider.builder';
 import { SelectionInputBuilder } from './widgets/selection-input/selection-input.builder';
 import { TextParagraphBuilder } from './widgets/text-paragraph/text-paragraph.builder';
+import { TextInputBuilder } from './widgets/text-input/text-input.builder';
 import { Color } from './shared/color';
 import { HeaderBuilder } from './header/header.builder';
 
@@ -94,6 +95,10 @@ export class CardService {
 
   public static newDivider(): DividerBuilder {
     return new DividerBuilder();
+  }
+
+  public static newTextInput(): TextInputBuilder {
+    return new TextInputBuilder();
   }
 }
 

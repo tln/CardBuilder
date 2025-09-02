@@ -8,10 +8,13 @@ import { SelectionInputBuilder } from './selection-input/selection-input.builder
 import { SelectionInputWidget } from './selection-input/selection-input.widget';
 import { TextParagraphBuilder } from './text-paragraph/text-paragraph.builder';
 import { TextParagraphWidget } from './text-paragraph/text-paragraph.widget';
+import { TextInputBuilder } from './text-input/text-input.builder';
+import { TextInputWidget } from './text-input/text-input.widget';
 
 export type Widget =
   | SelectionInputWidget
   | TextParagraphWidget
+  | TextInputWidget
   | ButtonListWidget
   | DateTimePickerWidget
   | DividerWidget;
@@ -19,6 +22,7 @@ export type Widget =
 export type WidgetBuilder =
   | SelectionInputBuilder
   | TextParagraphBuilder
+  | TextInputBuilder
   | ButtonListBuilder
   | DateTimePickerBuilder
   | DividerBuilder;

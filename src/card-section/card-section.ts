@@ -7,6 +7,7 @@ import { DecoratedTextWidget } from '../widgets/decorated-text/decorated-text.wi
 import { DividerWidget } from '../widgets/divider/divider.widget';
 import { SelectionInputWidget } from '../widgets/selection-input/selection-input.widget';
 import { TextParagraphWidget } from '../widgets/text-paragraph/text-paragraph.widget';
+import { TextInputWidget } from '../widgets/text-input/text-input.widget';
 
 export type CardSectionProps = {
   header?: string;
@@ -18,6 +19,7 @@ export type CardSectionProps = {
 const widgetNameMap = new Map([
   [SelectionInputWidget.name, 'selectionInput'],
   [TextParagraphWidget.name, 'textParagraph'],
+  [TextInputWidget.name, 'textInput'],
   [DecoratedTextWidget.name, 'decoratedText'],
   [ButtonListWidget.name, 'buttonList'],
   [DateTimePickerWidget.name, 'dateTimePicker'],
